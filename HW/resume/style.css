@@ -1,7 +1,10 @@
 html, body {
     background-color: #fbfbf8;
     font-family: 'Karla', sans-serif;
-        }
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+}
 /* select the section with id="centered"*/
 section#centered {
     /*set the width of this selection to be 600px  */
@@ -12,25 +15,31 @@ section#centered {
     margin: 0 auto;
     /*same as writing margin: 0 auto 0 auto; important because it centers everything*/
     /*set the border of the selection to be that color*/
-    border: 1px solid #728696;
+    /* border: 1px solid #728696; */
         }
 h1,h2,h3 {
     color:#728696;
-        }
-h1 {
-    font-size: 40 px;
+    text-align: center;
+}
+
+#name {
+    font-size: 60px;
     font-weight: 300;
+    border: groove 1em #fbfbf8;
+    border-radius: 2em;
     /*make heading go on right*/
-    display: inline-block;
-    float: right;
-        }
+    /* display: inline-block;
+    float: right; */
+}
+
 p{
-    font-size: 150%;
+    font-size: 100%;
     font-weight: 100;
-    width: 400 px;
+    width: 400px
+    /* min-width: 500px; */
     /*make paragraph stay on left*/
-    display: inline-block;
-    float: left;
+    /* display: inline-block;
+    float: left; */
 
     text-align: jusitfy;
 }
@@ -40,9 +49,40 @@ ul {
   /*love*/
 a:link, a:visited{
     color: #C9BFB5;
+    text-decoration: none;
         }
   /*hate*/
 a:hover, a:active {
     background-color: #C9BFB5;
     color:#728696;
         }
+
+
+#special_skills {
+    width: 600px;
+    margin: 0 auto;
+}
+table td{
+    text-align: center;
+}
+table th{
+    color:#bada55
+}
+.experience {
+    background-color: black;
+}
+#education {
+    width: 600px;
+    height: 200px;
+    background-color: black;
+}
+
+figure#headshot {
+    width: 300px;
+    margin: 0 auto;
+
+}
+
+figure#headshot img {
+    width: 100%;
+}

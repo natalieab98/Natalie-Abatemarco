@@ -1,20 +1,48 @@
-h1,h2,h3 {
-  color:#728696;
-}
-
 html, body {
-  background-color: #fbfbf8;
-  font-family: 'Karla', sans-serif;
+    background-color: #fbfbf8;
+    font-family: 'Karla', sans-serif;
+        }
+/* select the section with id="centered"*/
+section#centered {
+    /*set the width of this selection to be 600px  */
+    width:1200 px;
+    /* set the margiin to be 0 on the top & bottom, auto on left & right */
+    /*max-width:
+    min-width: FOR BOUNDARIES*/
+    margin: 0 auto;
+    /*same as writing margin: 0 auto 0 auto; important because it centers everything*/
+    /*set the border of the selection to be that color*/
+    border: 1px solid #728696;
+        }
+h1,h2,h3 {
+    color:#728696;
+        }
+h1 {
+    font-size: 40 px;
+    font-weight: 300;
+    /*make heading go on right*/
+    display: inline-block;
+    float: right;
+        }
+p{
+    font-size: 150%;
+    font-weight: 100;
+    width: 400 px;
+    /*make paragraph stay on left*/
+    display: inline-block;
+    float: left;
+
+    text-align: jusitfy;
 }
 ul {
-  color: #C9BFB5;
-  }
+    color: #C9BFB5;
+        }
   /*love*/
 a:link, a:visited{
     color: #C9BFB5;
-  }
+        }
   /*hate*/
 a:hover, a:active {
-  background-color: #C9BFB5;
-  color:#728696;
-  }
+    background-color: #C9BFB5;
+    color:#728696;
+        }

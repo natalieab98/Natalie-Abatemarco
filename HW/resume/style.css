@@ -32,7 +32,8 @@ em{
 #name {
     font-size: 60px;
     font-weight: 300;
-    border: groove 1em #C9BFB5;
+    font-family: 'Sofia', cursive;
+    border: groove .4em #C9BFB5;
     border-radius: 2em;
     /*make heading go on right*/
     /* display: inline-block;
@@ -62,7 +63,6 @@ a:hover, a:active {
     background-color: #C9BFB5;
     color:#728696;
         }
-
 #special_skills {
     width: 600px;
     margin: 0 auto;
@@ -83,9 +83,13 @@ table th{
 figure#headshot {
     width: 300px;
     margin: 0 auto;
-
 }
-
 figure#headshot img {
     width: 100%;
+}
+footer{
+  font-family: 'Sofia', cursive;
+}
+address{
+  color:#728696
 }

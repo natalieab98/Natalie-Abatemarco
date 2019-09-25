@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    /** * selects EVERYTHING on the page**/
+}
+html{
+    font-size: 21px;
+    /**this sets the style for everything, this font size is good for both comp and mobile**/
+    line-height: 1.7;
+    font-family: sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #C0FBFC;
+    margin: 0;
+    /**babyblue**/
+}
+
+main{
+    background-color: #80DEE2;
+    /** darkblue **/
+    width: 90vw;
+    /** vw is view width, percent of the screen that it covers**/
+    height: 9vh;
+    /** vh is view height **/
+}
+
+h1{
+    background-color: #FFC700;
+    /**yellow**/
+}

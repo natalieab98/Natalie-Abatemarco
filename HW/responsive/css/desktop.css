@@ -1,14 +1,95 @@
-header{
-  image-orientation: 300px;
+html{
+  font-family: 'Lora', serif;
 }
 
+img{
+  height: 170px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Add a same background color to the top navigation as screen background */
+.topnav {
+  background-color: #fbfbf8;
+  overflow: hidden;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  background-color: #fbfbf8
+  float: center;
+  color: #342724;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #DED0CD;
+  color: black;
+}
 
 body{
-  background-color: #D7D1CA;
-  /**tan**/
-  color: #FFFFFF;
+  background-color: #fbfbf8;
+  /**light tan**/
+  color: #342724;
+  /**text is dark brown/black**/
 }
 
-h2{
-  background-color: #C0DFDE;
+
+
+
+
+
+.grid_container{
+  display: grid;
+  grid-template-areas:
+    "ivory ivory blue"
+    "gb gb gb";
+  grid-gap: 1rem;
+  /**rem is **/
+  /**grid-gap is space between the boxes while grid-row-gap is space between rowa**/
+  grid-row-gap:1rem;
+}
+
+/**body{
+  font-size: 1.6rem;
+}**/
+
+.box{
+   border: 1px solid #D7D1CA;
+   font-family: monospace;
+   /**light gray border for all the classes with box in them**/
+   min-height: 200px;
+}
+.ivory{
+  grid-area: ivory;
+  background-color: #FCFEF0;
+}
+.blue{
+  grid-area: blue;
+  background-color: #C0E6E5;
+}
+.gb{
+  grid-area: gb;
+  background-color: #C0DAD9;
+}
+
+
+
+
+
+
+
+.footer {
+  padding: 1px;
+  text-align: center;
+  background: #DED0CD;
+  margin-top: 10px;
+  margin-bottom: 2px;
 }

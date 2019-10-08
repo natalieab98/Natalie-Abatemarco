@@ -3,7 +3,8 @@ html{
 }
 
 img{
-  height: 170px;
+  height: 180px;
+  width: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;

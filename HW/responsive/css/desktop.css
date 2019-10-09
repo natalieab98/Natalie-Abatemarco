@@ -46,10 +46,14 @@ body{
   /**text is dark brown/black**/
 }
 
-
 .image-grid {
   width: 100%;
   height: 100%;
+}
+
+.image-grid-tall {
+  min-width: 300px;
+  min-height: 60px;
 }
 
 .grid_container{
@@ -67,9 +71,15 @@ body{
   margin-top: 5rem
 }
 
-/**body{
-  font-size: 1.6rem;
-}**/
+.grid_container_2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 350px 600px;
+  grid-template-areas:
+    "grid2-words grid2-photo1 grid2-photo1"
+    "grid2-photo2 grid2-photo2 grid2-words2";
+  grid-row-gap:1rem;
+}
 
 .box{
    min-height: 200px;
@@ -80,48 +90,25 @@ body{
 }
 .blue{
   grid-area: blue;
-  background-color: #C0E6E5;
+  background-color: #fbfbf8;
 }
 .gb{
   grid-area: gb;
   background-color: #C0DAD9;
 }
 
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #fbfbf8;
+.grid2-photo1{
+  grid-area: grid2-photo1;
 }
 
-li {
-  float: left;
+.grid2-words{
+  grid-area: grid2-words;
 }
 
-li a {
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  background-color: #fbfbf8;
-  float: center;
-  color: #342724;
-  font-size: 14px;
+.grid2-photo2{
+  grid-area: grid2-photo2;
 }
 
-/* Change the link color on hover */
-li a:hover {
-  background-color: #DED0CD;
-  color: black;
-}
-
-
-.footer {
-  padding: 1px;
-  text-align: center;
-  background: #DED0CD;
-  margin-top: 10px;
-  margin-bottom: 2px;
+.grid2-words2{
+  grid-area: grid2-words2;
 }

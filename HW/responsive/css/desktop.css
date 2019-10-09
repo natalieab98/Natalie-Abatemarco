@@ -52,19 +52,23 @@ body{
 }
 
 .image-grid-tall {
-  min-width: 300px;
-  min-height: 60px;
+  width: 700px;
+  height: 370px;
+}
+
+.eyepic {
+  width: 300px;
+  height: 300px;
 }
 
 .grid_container{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 1fr;
+  grid-template-columns:370px 1fr 1fr;
+  grid-template-rows: 130px 1fr;
   grid-template-areas:
-    ". blue blue"
+    "blue blue blue"
     "gb ivory .";
   grid-gap: 1rem;
-  /**rem is **/
   /**grid-gap is space between the boxes while grid-row-gap is space between rowa**/
   grid-row-gap:1rem;
   margin-bottom: 4rem;
@@ -74,11 +78,20 @@ body{
 .grid_container_2{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 350px 600px;
+  grid-template-rows: 350px 500px;
   grid-template-areas:
     "grid2-words grid2-photo1 grid2-photo1"
-    "grid2-photo2 grid2-photo2 grid2-words2";
-  grid-row-gap:1rem;
+    "grid2-photo2 grid2-words2 .";
+  grid-row-gap:2rem;
+}
+
+.grid_container_3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "grid3-words grid3-photo1"
+  grid-row-gap:2rem;
+  margin-top: 20px;
 }
 
 .box{
@@ -111,4 +124,12 @@ body{
 
 .grid2-words2{
   grid-area: grid2-words2;
+}
+
+.grid3-photo1{
+  grid-area: grid3-photo1;
+}
+
+.grid3-words{
+  grid-area: grid3-words;
 }

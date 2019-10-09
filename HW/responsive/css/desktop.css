@@ -69,8 +69,8 @@ body{
     "blue blue blue"
     "gb ivory .";
   grid-gap: 1rem;
-  /**grid-gap is space between the boxes while grid-row-gap is space between rowa**/
-  grid-row-gap:1rem;
+  /*grid-gap is space between the boxes while grid-row-gap is space between rows*/
+  grid-row-gap:2rem;
   margin-bottom: 4rem;
   margin-top: 5rem
 }
@@ -78,11 +78,11 @@ body{
 .grid_container_2{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 350px 500px;
+  grid-template-rows: 350px 400px;
   grid-template-areas:
     "grid2-words grid2-photo1 grid2-photo1"
     "grid2-photo2 grid2-words2 .";
-  grid-row-gap:2rem;
+  grid-row-gap:5rem;
   grid-gap: 1rem;
 }
 
@@ -91,7 +91,7 @@ body{
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "grid3-words grid3-photo1";
-  grid-gap:2rem;
+  grid-gap:5rem;
   margin-top: 20px;
 }
 

@@ -83,14 +83,15 @@ body{
     "grid2-words grid2-photo1 grid2-photo1"
     "grid2-photo2 grid2-words2 .";
   grid-row-gap:2rem;
+  grid-gap: 1rem;
 }
 
 .grid_container_3{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "grid3-words grid3-photo1"
-  grid-row-gap:2rem;
+    "grid3-words grid3-photo1";
+  grid-gap:2rem;
   margin-top: 20px;
 }
 

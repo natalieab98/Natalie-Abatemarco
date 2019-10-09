@@ -2,7 +2,7 @@ html{
   font-size: 21px;
   /**default size it 16 px, but 21px is 1 rem SO you can use rem instead if you want to make proprotions easier than guessing px sizes**/
   line-height: 1.7;
-  font-family: 'Lora', serif;
+  font-family: sans-serif;
 }
 
 .grid_container{

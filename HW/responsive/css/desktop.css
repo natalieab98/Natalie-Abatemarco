@@ -2,6 +2,10 @@ html{
   font-family: 'Lora', serif;
 }
 
+.name{
+  width: 100%;
+}
+
 img{
   height: 180px;
   width: 300px;
@@ -43,19 +47,24 @@ body{
 }
 
 
-
-
-
+.image-grid {
+  width: 100%;
+  height: 100%;
+}
 
 .grid_container{
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr;
   grid-template-areas:
-    "ivory ivory blue"
-    "gb gb gb";
+    ". blue blue"
+    "gb ivory .";
   grid-gap: 1rem;
   /**rem is **/
   /**grid-gap is space between the boxes while grid-row-gap is space between rowa**/
   grid-row-gap:1rem;
+  margin-bottom: 4rem;
+  margin-top: 5rem
 }
 
 /**body{
@@ -63,14 +72,11 @@ body{
 }**/
 
 .box{
-   border: 1px solid #D7D1CA;
-   font-family: monospace;
-   /**light gray border for all the classes with box in them**/
    min-height: 200px;
 }
 .ivory{
   grid-area: ivory;
-  background-color: #FCFEF0;
+  align-self: end;
 }
 .blue{
   grid-area: blue;
@@ -82,9 +88,34 @@ body{
 }
 
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fbfbf8;
+}
 
+li {
+  float: left;
+}
 
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #fbfbf8;
+  float: center;
+  color: #342724;
+  font-size: 14px;
+}
 
+/* Change the link color on hover */
+li a:hover {
+  background-color: #DED0CD;
+  color: black;
+}
 
 
 .footer {

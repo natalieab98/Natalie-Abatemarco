@@ -67,7 +67,7 @@ body{
 .grid_container{
   display: grid;
   grid-template-columns:370px 1fr 1fr 1fr;
-  grid-template-rows: 200px 850px;
+  grid-template-rows: 200px 737px;
   grid-template-areas:
     "blue blue blue blue"
     "gb gb ivory ivory";
@@ -85,6 +85,7 @@ body{
   grid-template-areas:
     "words1 pic1 pic2";
     grid-row-gap: 1rem;
+    margin-top: 120px;
 }
 
 .grid_container_2{
@@ -96,16 +97,18 @@ body{
     "grid2-photo2 grid2-photo2 grid2-words2";
   grid-row-gap:5rem;
   grid-gap: 7rem;
+  margin-top: 120px;
 }
 
 .grid_container_3{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px;
+  grid-template-rows: 250px;
   grid-template-areas:
     "grid3-words grid3-photo1 grid3-photo3";
   grid-gap:5rem;
-  margin-top: 90px;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 .box{

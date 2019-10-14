@@ -24,7 +24,7 @@ img{
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  background-color: #fbfbf8
+  background-color: #fbfbf8;
   float: center;
   color: #535353;
   text-align: center;
@@ -67,7 +67,7 @@ body{
 
 .grid_container{
   display: grid;
-  grid-template-columns:370px 1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr 1fr 1fr;
   grid-template-rows: 200px 737px;
   grid-template-areas:
     "blue blue blue blue"

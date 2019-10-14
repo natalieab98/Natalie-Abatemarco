@@ -2,15 +2,15 @@ body{
   margin: 2% 4%;
 }
 
-@media only screen and (max-width:600px) {
+@media screen and (max-width:600px) {
   .grid_container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "blue"
-    "gb"
-    "ivory";
-  }
+    "ivory"
+    "gb";
+    }
   .grid_container_4 {
     display: grid;
     grid-template-columns: 1fr;

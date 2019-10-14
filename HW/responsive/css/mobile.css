@@ -4,11 +4,19 @@ body{
 
 @media only screen and (max-width:600px) {
   .grid_container {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
     "blue"
-    "ivory"
-    "gb";
-
+    "gb"
+    "ivory";
   }
+  .grid_container_4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "pic1"
+    "pic2"
+    "words1";
+    }
 }

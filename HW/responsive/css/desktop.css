@@ -3,15 +3,17 @@ html{
 }
 
 .name{
-  width: 100%;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
 }
 
 img{
-  height: 180px;
+  /* height: 180px;
   width: 300px;
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
 }
 /* Add a same background color to the top navigation as screen background */
 .topnav {
@@ -25,7 +27,7 @@ img{
 /* Style the links inside the navigation bar */
 .topnav a {
   background-color: #fbfbf8;
-  float: center;
+  text-align: center;
   color: #535353;
   text-align: center;
   padding: 14px 16px;
@@ -49,12 +51,14 @@ body{
 .image-grid {
   width: 100%;
   height: 100%;
-  max-height: 737px;
+  /* max-height: 737px; */
 }
 
 .image-grid-tall {
-  width: 700px;
+  width: 100%;
   height: 370px;
+  margin: 0 auto;
+  display: block;
 }
 
 .image-grid-eye {
@@ -64,6 +68,18 @@ body{
   align-self: center;
   justify-content: center;
 }
+
+.majorpic {
+  max-height: 737px;
+}
+/* .grid_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "blue"
+  "ivory"
+  "gb";
+  } */
 
 .grid_container{
   display: grid;
@@ -76,7 +92,7 @@ body{
   /*grid-gap is space between the boxes while grid-row-gap is space between rows*/
   grid-row-gap:2rem;
   margin-bottom: 4rem;
-  margin-top: 5rem
+  margin-top: 5rem;
 }
 
 .grid_container_4{
@@ -85,8 +101,8 @@ body{
   grid-template-rows: 500px;
   grid-template-areas:
     "pic1 pic2 words1";
-    grid-row-gap: 1rem;
-    margin-top: 120px;
+  grid-row-gap: 1rem;
+  margin-top: 120px;
 }
 
 .grid_container_2{
@@ -113,7 +129,7 @@ body{
 
 .grid_container_5{
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-columns: repeat(6, 200px);
   grid-template-rows: 200px 200px;
   grid-template-areas:
     "grid5-photo1 grid5-photo2 grid5-photo3 grid5-photo4 grid5-photo9 grid5-photo10"
@@ -123,11 +139,11 @@ body{
 }
 
 .box{
-   min-height: 200px;
+  min-height: 200px;
 }
 .ivory{
   grid-area: ivory;
-  align-self: end;
+  align-self: stretch;
 }
 .blue{
   grid-area: blue;

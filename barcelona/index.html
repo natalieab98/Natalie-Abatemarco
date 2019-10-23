@@ -9,7 +9,7 @@
 
     <body>
         <header>
-            <h1>Visit Barcelona</h1>
+            <h1 id="bcn">Visit Barcelona</h1>
             <p>A few things you can see in Barcelona, if you come at the right time.</p>
             <nav>
                 <a href="#" id="disseny">Design Museum</a>
@@ -40,7 +40,9 @@
         </script>
         <script type="text/javascript">
             $(document).ready(function() {
-
+              $("#bcn").css("font-size", "60px");
+              $("#a_box").html("<p>This is a paragraph</p>");
+              // this replaces whatever had the id a_box with the paragraph you want, you can do it manually, but it is usefull for when you start to have events like clicking on it and changing things when you click on them
             });
         </script>
     </body>

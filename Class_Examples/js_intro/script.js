@@ -1,6 +1,6 @@
 $(document).ready(function () {
   //all your javascript goes here
-    var x = 2+"2";
+    var x = 2+2;
     console.log(x);
     console.log("everthing loaded!");
     console.log("this function ran");
